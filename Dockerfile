@@ -1,5 +1,5 @@
 # ---- Docker based ----
-FROM docker:stable-dind
+FROM docker:stable
 
 #Set the timezone to Paris
 ENV TZ=Europe/Paris
