@@ -1,4 +1,4 @@
-# ---- Docker based ----
+# ---- Node Alpine based ----
 FROM node:lts-alpine
 
 #Set the timezone to Paris
@@ -6,7 +6,7 @@ ENV TZ=Europe/Paris
 
 RUN \
     apk update \
-    # install curl
+    # install bash git jq util-linux
     && apk add bash curl git jq util-linux \
     # cleanup
     && rm /var/cache/apk/* \
