@@ -7,7 +7,7 @@ ENV TZ=Europe/Paris
 RUN \
     apk update \
     # install bash git jq util-linux nodejs npm
-    && apk add --update --no-cache bash jq util-linux nodejs npm \
+    && apk add --update --no-cache bash jq util-linux nodejs npm ssh-agent \
     # cleanup
     && rm /var/cache/apk/* \
     && rm -rf /var/lib/apk/
